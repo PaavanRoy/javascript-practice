@@ -26,7 +26,7 @@ let value =3
 let newValue=-value
 //console.log(newValue);
 
-console.log(+true)
+//console.log(+true)
 // +true value is 1 
 /****************summary********************* */
 
@@ -37,4 +37,23 @@ console.log(+true)
 // refrence (non-premative): array, object, functions
 
 
+// stack (premative)  heap (non-premative)
 
+// stack 
+let MyUserName ="PaavanSriSai"
+
+let AnotherName= MyUserName
+AnotherName="Roy"
+
+console.log(AnotherName);
+
+//heap
+let USerOne= {
+    emialid:"Paavan@gmail.com"
+    
+}
+let UserTwo=USerOne
+
+UserTwo.emialid="some@gmail.com"
+console.log(USerOne.emialid);
+console.log(UserTwo.emialid);
